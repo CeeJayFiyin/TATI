@@ -287,8 +287,15 @@ footer {
         width: 120px; /* Reduce logo size */
     }
 
+    nav .navigation ul {
+        flex-direction: column; /* Change navigation items to stack vertically */
+        align-items: flex-start; /* Align items to the start */
+        margin-top: 20px; /* Add spacing between navigation items */
+    }
+
     nav .navigation ul li {
-        margin-left: 20px; /* Reduce margin between navigation items */
+        margin-left: 0; /* Remove margin for navigation items */
+        margin-bottom: 10px; /* Add spacing between navigation items */
     }
 
     #home {
@@ -334,3 +341,23 @@ footer {
 }
 
 /* You can add more adjustments for smaller screens if needed */
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 1vw 4vw; /* Adjust padding for smaller screens */
+    }
+
+    nav img {
+        width: 120px; /* Reduce logo size for smaller screens */
+    }
+
+    nav .navigation ul {
+        flex-direction: column; /* Change navigation items to stack vertically */
+        align-items: flex-start; /* Align items to the start */
+        margin-top: 20px; /* Add spacing between navigation items */
+    }
+
+    nav .navigation ul li {
+        margin-left: 0; /* Remove margin for navigation items */
+        margin-bottom: 10px; /* Add spacing between navigation items */
+    }
+}
