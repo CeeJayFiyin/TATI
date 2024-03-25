@@ -288,6 +288,72 @@ footer {
         padding: 0 20px;
         /* Adjust as needed */
     }
+
+    nav {
+        padding: 1vw 4vw;
+        /* Adjust padding for navigation */
+    }
+
+    nav img {
+        width: 120px;
+        /* Reduce logo size */
+    }
+
+    nav .navigation ul li {
+        margin-left: 20px;
+        /* Reduce margin between navigation items */
+    }
+
+    #home {
+        padding-top: 20px;
+        /* Adjust padding */
+    }
+
+    #home h2 {
+        font-size: 1.8rem;
+        /* Decrease font size */
+    }
+
+    #home p {
+        width: 80%;
+        /* Adjust width */
+        font-size: 0.8rem;
+        /* Decrease font size */
+    }
+
+    #about,
+    #features,
+    #course,
+    #contact,
+    .social-icons {
+        padding: 5vw 4vw;
+        /* Adjust padding */
+    }
+
+    #features .fea-base {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* Adjust grid columns */
+    }
+
+    #features .fea-box h3 {
+        font-size: 1rem;
+        /* Decrease font size */
+    }
+
+    #features .fea-box p {
+        font-size: 0.9rem;
+        /* Decrease font size */
+    }
+
+    #course ul li {
+        font-size: 18px;
+        /* Decrease font size */
+    }
+
+    footer {
+        padding: 15px 0;
+        /* Adjust padding */
+    }
 }
 
 /* Media query for smartphones */
@@ -296,5 +362,66 @@ footer {
         width: 100%;
         padding: 0 10px;
         /* Adjust as needed */
+    }
+
+    nav {
+        padding: 1vw 2vw;
+        /* Further reduce padding for navigation */
+    }
+
+    nav img {
+        width: 100px;
+        /* Further reduce logo size */
+    }
+
+    nav .navigation ul li {
+        margin-left: 15px;
+        /* Further reduce margin between navigation items */
+    }
+
+    #home h2 {
+        font-size: 1.5rem;
+        /* Decrease font size */
+    }
+
+    #home p {
+        width: 90%;
+        /* Further adjust width */
+        font-size: 0.7rem;
+        /* Decrease font size */
+    }
+
+    #about,
+    #features,
+    #course,
+    #contact,
+    .social-icons {
+        padding: 4vw 3vw;
+        /* Further adjust padding */
+    }
+
+    #features .fea-base {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* Further adjust grid columns */
+    }
+
+    #features .fea-box h3 {
+        font-size: 0.9rem;
+        /* Decrease font size */
+    }
+
+    #features .fea-box p {
+        font-size: 0.8rem;
+        /* Decrease font size */
+    }
+
+    #course ul li {
+        font-size: 16px;
+        /* Further decrease font size */
+    }
+
+    footer {
+        padding: 10px 0;
+        /* Further adjust padding */
     }
 }
