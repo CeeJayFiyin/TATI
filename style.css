@@ -287,8 +287,24 @@ footer {
         width: 120px; /* Reduce logo size */
     }
 
+    nav .navigation {
+        display: none; /* Hide navigation links by default on smaller screens */
+        position: absolute;
+        top: 100%; /* Position dropdown below the nav bar */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+    }
+
+    nav .navigation.active {
+        display: flex; /* Show navigation links when active */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     nav .navigation ul {
-        flex-direction: column; /* Change navigation items to stack vertically */
+        flex-direction: column; /* Stack navigation links vertically */
         align-items: flex-start; /* Align items to the start */
         margin-top: 20px; /* Add spacing between navigation items */
     }
@@ -298,7 +314,7 @@ footer {
         margin-bottom: 10px; /* Add spacing between navigation items */
     }
 
-    #home {
+   #home {
         padding-top: 20px; /* Adjust padding */
     }
 
@@ -307,8 +323,9 @@ footer {
     }
 
     #home p {
-        width: 80%; /* Adjust width */
-        font-size: 0.8rem; /* Decrease font size */
+        width: 90%; /* Adjust width */
+        font-size: 0.9rem; /* Decrease font size */
+        line-height: 1.4; /* Adjust line height */
     }
 
     #about,
