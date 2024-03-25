@@ -1,0 +1,299 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font family */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Set font sizes for different screen sizes */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(204, 152, 83);
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(204, 152, 83);
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 4vw;
+    /* Adjusted padding for smaller screens */
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.15);
+}
+
+nav img {
+    width: 120px;
+    /* Adjusted width for smaller screens */
+    cursor: pointer;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 20px;
+    /* Adjusted margin for smaller screens */
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: burlywood;
+    font-size: 20px;
+    /* Adjusted font size for smaller screens */
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* Responsive hover effect for navigation links */
+@media only screen and (max-width: 768px) {
+    nav .navigation ul li a {
+        font-size: 18px;
+    }
+}
+
+nav .navigation ul li a:hover {
+    color: black;
+}
+
+/* Home Section */
+#home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("building.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p {
+    width: 80%;
+    /* Adjusted width for smaller screens */
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home .btn {
+    margin-top: 30px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 10px 25px;
+    /* Adjusted padding for smaller screens */
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.brown {
+    color: #fff;
+    background: rgb(204, 152, 83);
+    transition: 0.3s ease;
+}
+
+#home a.brown:hover {
+    color: rgb(204, 152, 83);
+    background: #fff;
+}
+
+#home a.black {
+    color: #fff;
+    background: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+#home a.black:hover {
+    color: rgb(204, 152, 83);
+    background: #fff;
+}
+
+
+/* About Section */
+#about {
+    padding: 5vw 4vw 0 4vw;
+    /* Adjusted padding for smaller screens */
+    text-align: center;
+}
+
+#about h2 {
+    color: rgb(204, 152, 83);
+}
+
+#about p {
+    font-size: 1rem;
+    /* Adjusted font size for smaller screens */
+}
+
+#about h3 {
+    color: rgb(204, 152, 83);
+}
+
+/* Features Section */
+#features {
+    padding: 5vw 4vw 0 4vw;
+    /* Adjusted padding for smaller screens */
+    text-align: center;
+}
+
+#features .fea-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* Fixed typo in minmax value */
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features .fea-box {
+    background-color: #f9f9ff;
+    text-align: start;
+}
+
+#features .fea-box i {
+    font-size: 2.3rem;
+    color: rgb(204, 152, 83);
+}
+
+#features .fea-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(204, 152, 83);
+    padding: 13px 0 7px 0;
+}
+
+#features .fea-box p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+
+/* Course Section */
+#course {
+    padding: 5vw 4vw 0 4vw;
+    /* Adjusted padding for smaller screens */
+    text-align: center;
+}
+
+#course p {
+    font-size: 1rem;
+    /* Adjusted font size for smaller screens */
+}
+
+#course ul li {
+    list-style: none;
+    font-size: 1rem;
+    /* Adjusted font size for smaller screens */
+}
+
+#course ul li a {
+    list-style: none;
+}
+
+/* Contact Section */
+#contact {
+    padding: 5vw 4vw 0 4vw;
+    /* Adjusted padding for smaller screens */
+}
+
+#contact h2 {
+    color: rgb(204, 152, 83);
+}
+
+/* Form Styling */
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    background: rgb(204, 152, 83);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: rgb(204, 152, 83);
+    background: #fff;
+}
+
+.social-icons {
+    margin-top: 20px;
+    padding: 5vw 4vw 0 4vw;
+    text-align: center;
+}
+
+.social-icons h2 {
+    color: rgb(204, 152, 83);
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+
+    width: 20px;
+    /* Adjust size as needed */
+    height: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
