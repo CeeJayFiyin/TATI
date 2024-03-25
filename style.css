@@ -98,7 +98,7 @@ nav .navigation ul {
     }
 
     nav .navbar-nav {
-        flex-direction: column;
+        flex-direction: row;
         /* Stack navigation items vertically */
     }
 
