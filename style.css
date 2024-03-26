@@ -293,6 +293,10 @@ button:hover {
 .founder-section {
     padding: 80px 0;
 }
+.founder-section h2 {
+    color: rgb(204, 152, 83);
+    text-align: center;
+}
 
 .founder-image img {
     width: 100%;
